@@ -1,0 +1,260 @@
+{
+	"compiler": {
+		"version": "0.8.1+commit.df193b15"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "comprar",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "comprarFiado",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "consultarDeuda",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "deuda",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "consultarDeudaGlobal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "deuda_global",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "consultarGastos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "gastado",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_pais",
+						"type": "string"
+					}
+				],
+				"name": "consultarIngresosPorPais",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "gastado_pais",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "consultarIngresosTotales",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ingreso_global",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "consultarProducto",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numero_unidades",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio_base_unitario",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "descripcion",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "valor_final",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destuirTienda",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "mensaje",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pagarDeuda",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pais",
+						"type": "string"
+					}
+				],
+				"name": "registrarCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numero_unidades",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio_base_unitario",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_descripcion",
+						"type": "string"
+					}
+				],
+				"name": "registrarProducto",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TiendaVanessaDaou.sol": "Tienda"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TiendaVanessaDaou.sol": {
+			"keccak256": "0x3c60a9e37295ee36c9694d6590a86dbe9ed8dcf7499cbaefeb84dc0045b534c2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7bdaff772557375083f9c735fe8b5668f405cfc51fc05c2c6f76cc278fe9fa51",
+				"dweb:/ipfs/QmU7A4JaQExDwRYygewLW6BYgoJ7jnAbQBGy5TyNoJ2943"
+			]
+		}
+	},
+	"version": 1
+}
